@@ -8420,9 +8420,9 @@ h1, h2, h3, h4, h5,
     .slider-text h1 {
       font-size: 40px; } }
 
-.slider-text h2 {
+.slider-text h3 {
   font-weight: 800; }
-  .slider-text h2 span {
+  .slider-text h3 span {
     color: #3e64ff;
     text-decoration: underline; }
 

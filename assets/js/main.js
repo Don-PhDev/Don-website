@@ -278,7 +278,7 @@
 
 			$('html,body').animate({
 				scrollTop: $('.goto-here').offset().top
-			}, 500, 'easeInOutExpo');
+			}, 700, 'easeInOutExpo');
 			
 			return false;
 		});
@@ -439,4 +439,3 @@ $(function() {
   }
 
 });
-

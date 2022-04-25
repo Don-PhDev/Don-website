@@ -16,7 +16,6 @@
     scrollProperty: 'scroll'
   });
 
-
 	var fullHeight = function() {
 
 		$('.js-fullheight').css('height', $(window).height());
@@ -40,12 +39,10 @@
 	// Scrollax
    $.Scrollax();
 
-
-
    // Burger Menu
 	var burgerMenu = function() {
 
-		$('body').on('click', '.js-fh5co-nav-toggle', function(event){
+		$('body').on('click', '.js-fh5co-nav-toggle', function (event) {
 
 			event.preventDefault();
 
@@ -54,17 +51,13 @@
 			} else {
 				$(this).addClass('active');	
 			}
-
-			
 			
 		});
 
 	};
 	burgerMenu();
 
-
 	var onePageClick = function() {
-
 
 		$(document).on('click', '#ftco-nav a[href^="#"]', function (event) {
 	    event.preventDefault();
@@ -79,9 +72,7 @@
 		});
 
 	};
-
 	onePageClick();
-	
 
 	var carousel = function() {
 		$('.home-slider').owlCarousel({
@@ -128,14 +119,13 @@
 		// }, 100);
 	});
 
-
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
 
 	// scroll
 	var scrollWindow = function() {
-		$(window).scroll(function(){
+		$(window).scroll(function() {
 			var $w = $(this),
 					st = $w.scrollTop(),
 					navbar = $('.ftco_navbar'),
@@ -173,8 +163,6 @@
 	};
 	scrollWindow();
 
-	
-
 	var counter = function() {
 		
 		$('#section-counter, .hero-wrap, .ftco-counter, .ftco-about').waypoint( function( direction ) {
@@ -200,7 +188,6 @@
 
 	}
 	counter();
-
 
 	var contentWayPoint = function() {
 		var i = 0;
@@ -269,7 +256,6 @@
     fixedContentPos: false
   });
 
-
   var goHere = function() {
 
 		$('.mouse-icon').on('click', function(event){
@@ -286,8 +272,6 @@
 	goHere();
 
 	// $("#myScrollspy").scrollspy({ offset: -75 });
-
-
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -349,12 +333,6 @@ window.onload = function() {
 
 })(jQuery);
 
-
-
-
-
-
-
 // this makes the height of each page equal to the height of the window
 // $('.page').css('height', $( window ).height());
 
@@ -376,8 +354,6 @@ window.onload = function() {
 },500);
     hash($(this).attr('href'));
   });
-  
-  
   
   //select all the anchors in the navbar one after another
   $navbara.each(function(){
@@ -412,7 +388,6 @@ hash = function(h){
   }
 }
 
-
 $(function() {
 
   $(".progress").each(function() {
@@ -433,9 +408,7 @@ $(function() {
   })
 
   function percentageToDegrees(percentage) {
-
     return percentage / 100 * 360
-
   }
 
 });

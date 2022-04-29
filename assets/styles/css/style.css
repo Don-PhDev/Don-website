@@ -8372,8 +8372,8 @@ h1, h2, h3, h4, h5,
     position: absolute;
     top: 50%;
     left: -12px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     content: '';
     background: #3e64ff;
     z-index: -1;
@@ -8385,7 +8385,11 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 50%;
     border-radius: 50%; }
   .navbar-brand span {
-    color: #fff; }
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 2.125rem;
+  }
 
 .hero-wrap {
   width: 100%;

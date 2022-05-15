@@ -1,7 +1,7 @@
-@import 'bootstrap/bootstrap';
-@import 'bootstrap/variables';
+@import "bootstrap/bootstrap";
+@import "bootstrap/variables";
 
-$font-primary: 'Poppins',Arial, sans-serif;
+$font-primary: "Poppins",Arial, sans-serif;
 
 $white: #fff;
 $black: #000000;
@@ -9,8 +9,6 @@ $darken: #232931;
 
 $primary: #3e64ff;
 $secondary: #a0f669;
-
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -61,12 +59,11 @@ h1, h2, h3, h4, h5,
 }
 
 .text-primary {
-	color: $primary!important;
+	color: $primary !important;
 }
 
-
 .ftco-navbar-light {
-	background: transparent!important;
+	background: transparent !important;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -74,7 +71,7 @@ h1, h2, h3, h4, h5,
 	z-index: 3;
 	// padding-top: 30px;
 	@include media-breakpoint-down(md) {
-		background: $black!important;
+		background: $black !important;
 		position: relative;
 		top: 0;
 		padding-top: 0;
@@ -117,7 +114,7 @@ h1, h2, h3, h4, h5,
 				padding-right: 20px;
 				color: $black;
 				font-weight: 400;
-				opacity: 1!important;
+				opacity: 1 !important;
 				span {
 					position: relative;
 					display: block;
@@ -221,7 +218,7 @@ h1, h2, h3, h4, h5,
 	}
 	.navbar-toggler {
 		border: none;
-		color: rgba(255,255,255,.5)!important;
+		color: rgba(255,255,255,.5) !important;
 		cursor: pointer;
 		padding-right: 0;
 		text-transform: uppercase;
@@ -240,7 +237,7 @@ h1, h2, h3, h4, h5,
 		left: 0;
 		top: 0;
 		margin-top: -130px;
-		background: $white!important;
+		background: $white !important;
 		box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
 		padding: 0 15px;
 		.nav-item {
@@ -254,7 +251,7 @@ h1, h2, h3, h4, h5,
 			}
 			&.active {
 				> a {
-					color: $primary!important;
+					color: $primary !important;
 				}
 			}
 			&.cta {
@@ -262,7 +259,7 @@ h1, h2, h3, h4, h5,
 					color: $white !important;
 					background: $primary;
 					border: none !important;
-					padding-top: .5rem!important;
+					padding-top: .5rem !important;
 					padding-bottom: .5rem !important;
 					padding-left: 20px !important;
 					padding-right: 20px !important;
@@ -285,16 +282,16 @@ h1, h2, h3, h4, h5,
 			@include media-breakpoint-down(md) {
 				background: none;
 				border-radius: 0px;
-				padding-left: 0!important;
-				padding-right: 0!important;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
 				margin-left: 0 !important;
 			}
 		}
 
 		.navbar-toggler {
 			border: none;
-			color: rgba(0,0,0,.5)!important;
-			border-color: rgba(0,0,0,.5)!important;
+			color: rgba(0,0,0,.5) !important;
+			border-color: rgba(0,0,0,.5) !important;
 			cursor: pointer;
 			text-transform: uppercase;
 			font-size: 16px;
@@ -302,9 +299,9 @@ h1, h2, h3, h4, h5,
 
 		}
 		.nav-link {
-			color: $black!important;
+			color: $black !important;
 			&.active {
-				color: $primary!important;
+				color: $primary !important;
 			}
 		}
 		&.awake {
@@ -335,140 +332,135 @@ h1, h2, h3, h4, h5,
 		left: -12px;
 		width: 40px;
 		height: 40px;
-		content: '';
+		content: "";
 		background: $primary;
 		z-index: -1;
 		transform: translateY(-50%);
-		@include border-radius(50%);
+    @include border-radius(50%);
 	}
-	span{
+	span {
 		color: $white;
 	}
 }
 
-
-.hero-wrap{
+.hero-wrap {
 	width: 100%;
 	height: 100%;
 	position: inherit;
 	background-size: cover;
 	background-repeat: no-repeat;
-	@include media-breakpoint-down(md){
-	}
-	.overlay{
+	.overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		content: '';
+		content: "";
 		opacity: .1;
 		width: 50%;
 		background: $primary;
 	}
-	.text{
+	.text {
 		width: 100%;
 	}
 }
 
-.slider-text{
-	.subheading{
-			text-transform: uppercase;
-			font-size: 16px;
-			font-weight: 800;
-			color: $primary;
-			letter-spacing: 4px;
-		}
-		h1{
-			font-size: 60px;
-			font-weight: 800;
-			@include media-breakpoint-down(sm){
-				font-size: 40px;
-			}
-		}
-		h3{
-			font-weight: 800;
-			span{
-				color: $primary;
-				text-decoration: underline;
-			}
-		}
+.slider-text {
+	.subheading {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+    color: $primary;
+    letter-spacing: 4px;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 800;
+    @include media-breakpoint-down(sm) {
+      font-size: 40px;
+    }
+  }
+  h3 {
+    font-weight: 800;
+    span {
+      color: $primary;
+      text-decoration: underline;
+    }
+  }
 	p {
 		font-size: 20px;
 		line-height: 1.5;
 		font-weight: 300;
 		color: rgba(255,255,255,.8);
-		strong{
+		strong {
 			font-weight: 700;
-			a{
+			a {
 				color: $black;
 			}
 		}
 	}
-	.breadcrumbs{
+	.breadcrumbs {
 		font-size: 16px;
 		margin-bottom: 20px;
 		z-index: 99;
 		font-weight: 600;
 		text-transform: uppercase;
-		span{
+		span {
 			color: rgba(0,0,0,.8);
-			i{
+			i {
 				color: rgba(0,0,0,.8);
 			}
-			a{
+			a {
 				color: $primary;
-				&:hover, &:focus{
+				&:hover, &:focus {
 					color: $primary;
-					i{
+					i {
 						color: $primary;
 					}
 				}
 			}
 		}
 	}
-	.bread{
+	.bread {
 		font-weight: 700;
 		color: $black;
 		font-size: 60px;
 	}
 }
 
-
-
 //MOUSE WHEEL
-.mouse{
+.mouse {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 120px;
   z-index: 2;
 }
-.mouse-icon{
-   width: 70px;
-   height: 70px;
-   border: 1px solid transparent;
-   // @include border-radius(50%);
-   // background: $primary;
-   cursor: pointer;
-   position: relative;
-   text-align: center;
-   margin: 0 auto;
-   display: block;
-   // z-index: 0;
-   &:after{
-   	position: absolute;
-   	top: 0;
-   	left: 0;
-   	right: 0;
-   	bottom: 0;
-   	content: '';
-   	background: lighten($primary,34.3%);
-   	z-index: -1;
-   	transform: rotate(45deg);
-   }
+.mouse-icon {
+  width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+  // @include border-radius(50%);
+  // background: $primary;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  // z-index: 0;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background: lighten($primary,34.3%);
+    z-index: -1;
+    transform: rotate(45deg);
+  }
 }
-.mouse-wheel{
+.mouse-wheel {
   height: 70px;
   margin: 2px auto 0;
   display: block;
@@ -483,52 +475,51 @@ h1, h2, h3, h4, h5,
 }
 @-webkit-keyframes wheel-up-down {
 	100% {
-	    margin-top: 25px;
-	    opacity: 1;
+    margin-top: 25px;
+    opacity: 1;
 	}
 	30% {
-	    opacity: 1;
+    opacity: 1;
 	}
 	0% {
-	    margin-top: -10px;
-	    opacity: 0;
+    margin-top: -10px;
+    opacity: 0;
 	}
 }@-moz-keyframes wheel-up-down {
 	100% {
-	    margin-top: 25px;
-	    opacity: 1;
+    margin-top: 25px;
+    opacity: 1;
 	}
 	30% {
-	    opacity: 1;
+    opacity: 1;
 	}
 	0% {
-	    margin-top: -10px;
-	    opacity: 0;
+    margin-top: -10px;
+    opacity: 0;
 	}
 }@keyframes wheel-up-down {
 	100% {
-	    margin-top: 25px;
-	    opacity: 1;
+    margin-top: 25px;
+    opacity: 1;
 	}
 	30% {
-	    opacity: 1;
+    opacity: 1;
 	}
 	0% {
-	    margin-top: -10px;
-	    opacity: 0;
+    margin-top: -10px;
+    opacity: 0;
 	}
 }
-
 
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0 rgba($primary, 0.4);
   }
   70% {
-      -webkit-box-shadow: 0 0 0 30px rgba($primary, 0);
+    -webkit-box-shadow: 0 0 0 30px rgba($primary, 0);
   }
   100% {
-      -webkit-box-shadow: 0 0 0 0 rgba($primary, 0);
+    -webkit-box-shadow: 0 0 0 0 rgba($primary, 0);
   }
 }
 @keyframes pulse {
@@ -537,37 +528,32 @@ h1, h2, h3, h4, h5,
     box-shadow: 0 0 0 0 rgba($primary, 0.4);
   }
   70% {
-      -moz-box-shadow: 0 0 0 30px rgba($primary, 0);
-      box-shadow: 0 0 0 30px rgba($primary, 0);
+    -moz-box-shadow: 0 0 0 30px rgba($primary, 0);
+    box-shadow: 0 0 0 30px rgba($primary, 0);
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba($primary, 0);
-      box-shadow: 0 0 0 0 rgba($primary, 0);
+    -moz-box-shadow: 0 0 0 0 rgba($primary, 0);
+    box-shadow: 0 0 0 0 rgba($primary, 0);
   }
 }
 
-
-
-
-
 .bg-light {
-	background: #f8f9fa!important;
+	background: #f8f9fa !important;
 }
 
 .bg-dark {
-	background: #191919!important;
+	background: #191919 !important;
 }
 
-.bg-primary{
+.bg-primary {
 	background: $primary;
 }
-
 
 //BUTTON
 .btn {
 	cursor: pointer;
 	@include border-radius(40px);
-	// box-shadow: none!important;
+	// box-shadow: none !important;
 	-webkit-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	-moz-box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
 	box-shadow: 0px 24px 36px -11px rgba(0,0,0,0.09);
@@ -710,27 +696,27 @@ h1, h2, h3, h4, h5,
 			  color: $primary;
 			  margin-left: 20px;
 			  position: relative;
-			  &:after{
-			  	position: absolute;
-			  	top: 50%;
-			  	left: -24px;
-			  	width: 20px;
-			  	height: 2px;
-			  	content: '';
-			  	transform: translateY(-50%);
-			  	background: $primary;
+			  &:after {
+          position: absolute;
+          top: 50%;
+          left: -24px;
+          width: 20px;
+          height: 2px;
+          content: "";
+          transform: translateY(-50%);
+          background: $primary;
 			  }
 			}
   	}
   }
 }
-.page{
+.page {
 	width: 100%;
 	margin-bottom: 7em;
-	&.four{
+	&.four {
 		margin-bottom: 0;
 	}
-	.heading{
+	.heading {
 		font-weight: 800;
 		font-size: 30px;
 		margin-bottom: 30px;
@@ -738,38 +724,35 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
-
-
-.resume-wrap{
+.resume-wrap {
 	width: 100%;
 	margin-bottom: 30px;
 	border-bottom: 1px solid rgba(0,0,0,.1);
 	padding-bottom: 10px;
-	.icon{
-		width: 50px;
-		height: 50px;
-		background: $primary;
-		@include border-radius(50%);	
-		span{
+	.icon {
+    width: 50px;
+    height: 50px;
+    background: $primary;
+    @include border-radius(50%);
+    span {
 			color: $white;
 			font-size: 28px;
 		}
 	}
-	.text{
+	.text {
 		width: calc(100% - 50px);
 	}
-	.date{
+	.date {
 		font-weight: 700;
 		font-size: 16px;
 		color: rgba(0,0,0,.6);
 		color: $primary;
 	}
-	h2{
+	h2 {
 		font-size: 24px;
 		font-weight: 700;
 	}
-	.position{
+	.position {
 		font-size: 18px;
 		font-weight: 700;
 		// letter-spacing: 3px;
@@ -778,37 +761,35 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
 //PARTNER
-.ftco-partner{
+.ftco-partner {
 	padding: 4em 0 !important;
-	.partner{
+	.partner {
 		display: block;
 		padding: 0 20px;
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md) {
 			padding: 0 70px;
 			margin-bottom: 40px;
 		}
 	}
 }
 
-
-.services-1{
+.services-1 {
 	margin-bottom: 40px;
 	padding: 2em;
 	background: rgba(255,255,255,.1);
 	width: 100%;
-	.icon{
+	.icon {
 		display: block;
 		margin-bottom: 30px;
-		i{
+		i {
 			font-size: 60px;
 			line-height: 1.0;
 			color: $primary;
 		}
 	}
-	.desc{
-		h3{
+	.desc {
+		h3 {
 			line-height: 1.3;
 			font-size: 13px;
 			font-weight: 500;
@@ -816,74 +797,72 @@ h1, h2, h3, h4, h5,
 			text-transform: uppercase;
 			position: relative;
 			color: $black;
-			&:after{
+			&:after {
 				position: absolute;
 				bottom: -15px;
 				left: 0; 
 				right: 0;
-				content: '';
+				content: "";
 				width: 30px;
 				height: 1px;
 				background: $primary;
 				margin: 0 auto;
 			}
-			a{
+			a {
 				color: $white;
 			}
 		}
-		h4{
+		h4 {
 			font-size: 20px;
 			font-weight: 300;
 			margin-bottom: 18px;
 		}
-		span{
+		span {
 			display: block;
 			text-transform: uppercase;
 			font-size: 12px;
 			margin-bottom: 10px;
 			color: $primary;
 		}
-		p{
+		p {
 			color: rgba(0,0,0,.7);
 		}
 	}
-	&:hover{
+	&:hover {
 		background: $primary;
-		.icon{
-			i{
+		.icon {
+			i {
 				color: $white;
 			}
 		}
-		h3{
+		h3 {
 			color: $black;
-			&:after{
+			&:after {
 				background: $black;
 			}
 		}
 	}
 }
 
-
-
 //SKILLS--------------------
-.progress-wrap{
+.progress-wrap {
 	width: 100%;
 	margin-bottom: 30px;
-	h3{
+	h3 {
 		font-size: 16px;
 		margin-bottom: 10px;
 		font-weight: 500;
-
 	}
 }
+
 //PROGRESS BAR
-.progress{
+.progress {
 	height: 10px;
 	box-shadow: none;
 	background: lighten($black,90%);
 	overflow: visible;
 }
-.progress-bar{
+.progress-bar {
 	background: $primary;
 	box-shadow: none;
 	font-size: 12px;
@@ -893,18 +872,18 @@ h1, h2, h3, h4, h5,
 	position: relative;
 	overflow: visible;
 	@include border-radius(2px);
-	&:after{
+	&:after {
 		position: absolute;
 		top: -2px;
 		right: 0;
 		width: 34px;
 		height: 34px;
-		content: '';
+		content: "";
 		background: $primary;
 		@include border-radius(2px);
 		opacity: 0;
 	}
-	span{
+	span {
 		position: absolute;
 		top: -38px;
 		right: 0;
@@ -914,8 +893,7 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
-.progress-circle{
+.progress-circle {
 	.progress {
 	  width: 150px;
 	  height: 150px;
@@ -987,7 +965,7 @@ h1, h2, h3, h4, h5,
 }
 
 // HIRE ME
-.ftco-hireme{
+.ftco-hireme {
 	background: $primary;
 	z-index: 0;
 	position: relative;
@@ -997,146 +975,143 @@ h1, h2, h3, h4, h5,
 		left: 0;
 		right: 0;
 		bottom: 0;
-		content: '';
+		content: "";
 		background: $primary;
 		opacity: .7;
 	}
-	h2{
+	h2 {
 		color: $white;
 		font-size: 40px;
 		font-weight: 900;
-		span{
+		span {
 			color: $secondary;
 		}
 	}
-	p{
+	p {
 		color: rgba(255,255,255,.9);
 	}
 }
 
-
 //PROJECT
-.project{
+.project {
 	width: 100%;
 	height: 350px;
 	margin-bottom: 0;
 	position: relative;
 	z-index: 0;
-	&.img-2{
+	&.img-2 {
 		height: 600px;
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(sm) {
 			height: 285px;
 		}
-		.text{
+		.text {
 			max-width: 45%;
 			z-index: 1;
-			h3{
+			h3 {
 				font-size: 22px;
-				a{
+				a {
 					color: $white;
 				}
 			}
-			span{
+			span {
 				color: rgba(255,255,255,.8);
 				text-transform: uppercase;
 				letter-spacing: 2px;
 			}
-			@include media-breakpoint-down(sm){
+			@include media-breakpoint-down(sm) {
 				max-width: 100%;
 				opacity: 1;
-				span{
+				span {
 					color: rgba(255,255,255,.8);
 				}
 			}
 		}
 	}
-	.overlay{
+	.overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
-		content: '';
+		content: "";
 		opacity: 0;
 		background: $primary;
 		z-index: -1;
 		@include transition(.3s);
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(sm) {
 			opacity: .2;
 		}
 	}
-	.text{
+	.text {
 		max-width: 80%;
 		z-index: 1;
 		opacity: 0;
 		@include transition(.3s);
-		h3{
+		h3 {
 			font-size: 20px;
-			a{
+			a {
 				color: $white;
 			}
 		}
-		span{
+		span {
 			color: rgba(255,255,255,.8);
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			font-size: 12px;
 			font-weight: 600;
 		}
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(sm) {
 			opacity: 1;
-			span{
+			span {
 				color: rgba(255,255,255,.8);
 			}
 		}
 	}
-	&:hover, &:focus{
-		.overlay{
+	&:hover, &:focus {
+		.overlay {
 			opacity: .9;
 		}
-		.text{
+		.text {
 			opacity: 1;
 		}
 	}
 }
 
-
 // USEFUL CODE
-.aside-stretch{
+.aside-stretch {
 	background: lighten($primary,10%);
-	&:after{
+	&:after {
 		position: absolute;
 		top: 0;
 		right: 100%;
 		bottom: 0;
-		content: '';
+		content: "";
 		width: 360%;
 		background: lighten($primary,10%);
 		// background: #333644;
 	}
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(sm) {
 		background: transparent;
-		&:after{
+		&:after {
 			background: transparent;
 			display: none;
 		}
 	}
 }
 
-
 .form-control {
-	height: 52px!important;
-	background: $white!important;
-	color: $black!important;
+	height: 52px !important;
+	background: $white !important;
+	color: $black !important;
 	font-size: 18px;
 	border-radius: 5px;
-	box-shadow: none!important;
+	box-shadow: none !important;
 	&:focus, &:active {
 		border-color: $black;
 	}
 }
 textarea.form-control {
-	height: inherit!important;
+	height: inherit !important;
 }
 .ftco-vh-100 {
   height: 100vh;
@@ -1153,46 +1128,39 @@ textarea.form-control {
 }
 
 .bg-primary {
-	background: $primary!important;
+	background: $primary !important;
 }
 
-
 //ABOUT
-.about-author{
+.about-author {
 	@include border-radius(5px);
-	img{
+	img {
 	}
-	.desc{
-		h3{
+	.desc {
+		h3 {
 			font-size: 24px;
 		}
 	}
-	.bio{
-
-	}
 }
-
 
 .ftco-section {
 	padding: 7em 0;
 	position: relative;
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(sm) {
 		padding: 6em 0;
 	}
 }
 
-.ftco-no-pt{
+.ftco-no-pt {
 	padding-top: 0 !important;
 }
-.ftco-no-pb{
+.ftco-no-pb {
 	padding-bottom: 0 !important;
 }
 
 .ftco-bg-dark {
 	background: #3c312e;
 }
-
-
 
 .ftco-footer {
 	font-size: 16px;
@@ -1212,22 +1180,22 @@ textarea.form-control {
 			font-size: 22px;
 			font-weight: 600;
 		}
-		ul{
-			li{
+		ul {
+			li {
 				margin-bottom: 10px;
-				a{
+				a {
 					color: rgba(255,255,255,.6);
-					span{
+					span {
 						// color: $white;
 						color: rgba(255,255,255,.6);
 					}
 				}
 			}
 		}
-		.btn-primary{
+		.btn-primary {
 			background: $white !important;
 			border: 2px solid $white !important;
-			&:hover{
+			&:hover {
 				background: $white;
 				border: 2px solid $white !important;
 			}
@@ -1248,7 +1216,6 @@ textarea.form-control {
 		color: $black;
 	}
 }
-
 
 .ftco-footer-social {
 	li {
@@ -1296,9 +1263,7 @@ textarea.form-control {
 	}
 }
 
-
 // Map
-
 #map {
 	// height: 400px;
 	width: 100%;
@@ -1306,7 +1271,6 @@ textarea.form-control {
 		height: 300px;
 	}
 }
-
 
 @-webkit-keyframes pulse {
   0% {
@@ -1325,18 +1289,18 @@ textarea.form-control {
     box-shadow: 0 0 0 0 rgba($primary, 0.4);
   }
   70% {
-      -moz-box-shadow: 0 0 0 30px rgba($primary, 0);
-      box-shadow: 0 0 0 30px rgba($primary, 0);
+    -moz-box-shadow: 0 0 0 30px rgba($primary, 0);
+    box-shadow: 0 0 0 30px rgba($primary, 0);
   }
   100% {
-      -moz-box-shadow: 0 0 0 0 rgba($primary, 0);
-      box-shadow: 0 0 0 0 rgba($primary, 0);
+    -moz-box-shadow: 0 0 0 0 rgba($primary, 0);
+    box-shadow: 0 0 0 0 rgba($primary, 0);
   }
 }
 
-.heading-section{
+.heading-section {
 	position: relative;
-	.subheading{
+	.subheading {
 		font-size: 13px;
 		font-weight: 500;
 		display: block;
@@ -1345,7 +1309,7 @@ textarea.form-control {
 		color: rgba(0,0,0,1);
 		letter-spacing: 3px;
 	}
-	h1.big{
+	h1.big {
 		position: absolute;
 		top: 0px;
 		left: 0;
@@ -1353,28 +1317,28 @@ textarea.form-control {
 		color: rgba(255,255,255,.1);
 		z-index: -1;
 		font-weight: 900;
-		&.big-2{
+		&.big-2 {
 			right: 0;
 		}
 	}
-	h2{
+	h2 {
 		font-size: 50px;
 		font-weight: 700;
-		span{
+		span {
 			font-weight: 400;
 		}
-		@include media-breakpoint-down(sm){
+		@include media-breakpoint-down(sm) {
 			font-size: 38px;
 		}
 	}
-	&.heading-section-white{
-		.subheading{
+	&.heading-section-white {
+		.subheading {
 			color: rgba(255,255,255,.9) !important;
 		}
-		h2{
+		h2 {
 			color: $white;
 		}
-		p{
+		p {
 			color: rgba(255,255,255,.9);
 		}
 	}
@@ -1383,15 +1347,13 @@ textarea.form-control {
 //COVER BG
 .img,
 .blog-img,
-.user-img{
+.user-img {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
 
-
 // magnific pop up
-
 .image-popup {
 	cursor: -webkit-zoom-in;
 	cursor: -moz-zoom-in;
@@ -1419,42 +1381,35 @@ textarea.form-control {
   opacity: 0;
 }
 
-
-
-
-#section-counter{
+#section-counter {
 	position: relative;
 	z-index: 0;
 }
 .ftco-counter {
-	@include media-breakpoint-down(lg){
+	@include media-breakpoint-down(lg) {
 		background-position: center center !important;
 	}
-	.icon{
-		span{
-		}
-	}
-	.block-18{
+	.block-18 {
 		display: block;
 		width:100%;
 		text-align: center;
 		padding: 30px 20px;
 	}
-	.text{
-		strong.number{
+	.text {
+		strong.number {
 			font-weight: 700;
 			font-size: 30px;
 			color: $primary;
 			display: block;
 		}
-		span{
+		span {
 			display: block;
 			font-size: 16px;
 			color: rgba(0,0,0,.8);
 		}
 	}
-	.counter-wrap{
-		@include media-breakpoint-down(sm){
+	.counter-wrap {
+		@include media-breakpoint-down(sm) {
 			margin-bottom: 20px;
 		}
 	}
@@ -1482,12 +1437,12 @@ textarea.form-control {
 	width: 100%;
 	height: 300px;
 }
-.blog-entry{
+.blog-entry {
 	position: relative;
-	@include media-breakpoint-up(md){
+	@include media-breakpoint-up(md) {
 		margin-bottom: 30px;
 	}
-	@include media-breakpoint-down(sm){
+	@include media-breakpoint-down(sm) {
 		margin-bottom: 30px;
 	}
 	.text {
@@ -1511,7 +1466,7 @@ textarea.form-control {
 		margin-bottom: 0;
 		font-size: 16px;
 		font-weight: 600;
-		span{
+		span {
 			color: $primary;
 		}
 		a {
@@ -1523,7 +1478,6 @@ textarea.form-control {
 	}
 }
 
-
 .block-23 {
 	ul {
 		padding: 0;
@@ -1534,7 +1488,7 @@ textarea.form-control {
 				line-height: 1.5;
 				margin-bottom: 15px;
 			}
-			span{
+			span {
 				color: rgba($white, .7);
 			}
 			.icon, .text {
@@ -1547,7 +1501,6 @@ textarea.form-control {
 				padding-top: 2px;
 				color: rgba($white, 1);
 			}
-			
 		}
 	}
 }
@@ -1561,9 +1514,6 @@ textarea.form-control {
 		}
 	}
 	.media-body {
-		.heading {
-
-		}
 		p {
 			font-size: 16px;
 		}
@@ -1599,86 +1549,79 @@ textarea.form-control {
 	}
 }
 
-
 .contact-section {
-	.contact-info{
-		p{
-			a{
+	.contact-info {
+		p {
+			a {
 				color: lighten($black,10%);
 			}
-			span{}
 		}
 	}
-	.box{
+	.box {
 		width: 100%;
 		display: block;
 		@include border-radius(4px);
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md) {
 			margin-bottom: 30px;
 		}
-		.icon{
+		.icon {
 			width: 100px;
 			height: 100px;
 			background: $primary;
 			margin: 0 auto;
 			margin-bottom: 10px;
 			@include border-radius(50%);
-			span{
+			span {
 				color: $white;
 				font-size: 30px;
 			}
 		}
-		h3{
+		h3 {
 			font-size: 18px;
 			font-weight: 600;
 		}
 	}
-	.contact-form{
+	.contact-form {
 		width: 100%;
 	}
 }
 .contact-section {
-	.img{
+	.img {
 		width: 100%;
 		background-position: top center;
-		@include media-breakpoint-down(md){
+		@include media-breakpoint-down(md) {
 			height: 500px;
 		}
 	}
-	.contact-info{
-		p{
-			a{
+	.contact-info {
+		p {
+			a {
 				color: $primary;
 			}
-			span{}
 		}
 	}
-	.contact-form{
+	.contact-form {
 		width: 100%;
-		.btn-primary{
-			@include media-breakpoint-down(sm){
+		.btn-primary {
+			@include media-breakpoint-down(sm) {
 				display: block;
 				width: 100%;
 			}
 		}
 	}
 }
-.block-9 {
 
+.block-9 {
 	.form-control {
-		outline: none!important;
-		box-shadow: none!important;
+		outline: none !important;
+		box-shadow: none !important;
 		font-size: 15px;
 	}
-	#map {
-	}
-
 }
-
 
 //### .block-21
 .block-21 {
-	.blog-img{
+	.blog-img {
 		display: block;
 		height: 80px;
 		width: 80px;
@@ -1827,9 +1770,7 @@ textarea.form-control {
 	}
 }
 
-
 // sidebar
-
 .sidebar-box {
 	margin-bottom: 30px;
 	padding: 25px;
@@ -1839,7 +1780,7 @@ textarea.form-control {
 		font-size: 18px;
 		margin-bottom: 15px;
 	}
-	.heading-sidebar{
+	.heading-sidebar {
 		font-weight: 600;
 		margin-bottom: 20px;
 		font-size: 20px;
@@ -1868,7 +1809,7 @@ textarea.form-control {
 				top: 0;
 				color: $primary;
 			}
-			&:hover, &:focus{
+			&:hover, &:focus {
 				color: $primary;
 			}
 		}
@@ -1880,8 +1821,6 @@ textarea.form-control {
 		}
 	}
 }
-
-
 
 #ftco-loader {
 	position: fixed;
